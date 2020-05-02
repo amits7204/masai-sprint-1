@@ -1,0 +1,267 @@
+
+body{
+    background-color: #FFFFFF;
+    margin: 0px;
+}
+
+#gallerybody{
+    background-color: white;
+    margin: 0px;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #FFFFFF;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px gray;
+  }
+
+  #disneyimg{
+      text-align: center;
+      height: 40px;
+      width: 100px;
+  }
+
+#cont{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50px;
+    grid-template-rows: 50px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template:  "a a a"
+                    "b c c";
+}
+
+#cont div {
+            border-radius: 15px 50px;
+        }
+
+#item1{
+    grid-area: a;
+    background-color: rgb(6, 58, 65);
+    width: 100%;
+    height: 60px;
+}
+
+#item2{
+    grid-area: b;
+    background-color: #F9AE33;
+    width: 100%;
+    height: 500px;
+} 
+
+#item3{
+    grid-area: c;
+    background-color:  rgb(178, 224, 224);
+    width: 850px;
+    height: 500px;
+}        
+
+.quoatesclass{
+    color: #000000;
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 60%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.nameclass{
+    color: #000000;
+    font-size: 12px;
+    padding-right: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+.optionid{
+    height: 300px;
+    width: 250px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 10px 18px gray;
+    float: left;
+    margin-top: 14%;
+    margin-left: 25px;
+}
+
+.optionimg{
+    height: 190px;
+    width: 100%;
+    margin: 0px;
+    border-radius: 4%;
+    object-fit: cover;
+    
+}
+
+p.photoname{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15%;
+}
+
+#gallerycont{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 190px 190px 190px 190px 190px 190px;
+    grid-template-rows: 190px 190px 190px 190px 190px 190px;
+    padding: 20px;
+}
+#gallerycont div{
+    border-radius: 8%;
+    background-color: white;
+    box-shadow: 5px 10px 18px gray;
+    text-align: center;
+    
+}
+
+#gallerycont div:nth-child(even){
+    background-image: url('resources/a.png');
+    object-fit: scale-down;
+}
+
+#gallerycont div:nth-child(odd){
+    background-image: url('resources/huey.png');
+    object-fit: scale-down;
+}
+
+a:hover {
+    background-color: rgb(4, 82, 4);
+  }
+
+
+  /* Comics Page  */
+  .flex-box{
+    display: flex;
+}
+
+.flex-box div {
+    margin: 50px 0px 0px 80px;
+    padding: 10px;
+    height:120px;
+    width:500px;  
+    border-radius: 8px;
+    box-shadow: 5px 10px 18px gray;
+    background: #042A38;
+}
+
+#box{
+flex-direction: row;
+}
+
+#box1{
+    flex-direction: row;
+}
+
+#box2{
+    flex-direction: row;
+}
+
+.comicsimg{
+    height: 120px;
+    width: 100px;
+    border-radius: 8px;
+    margin-right: 10px;
+    float: left;
+}
+
+.comics{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(192, 158, 63);
+    margin: 0px auto;
+}
+
+/* Film style */
+
+#filmcont{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50px;
+    grid-template-rows: 50px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template:  "a a a"
+                    "b c c";
+}
+
+#filmcont div {
+           border-radius: 4%;
+        }
+        
+        #filmitem2{
+            grid-area: b;
+            background-color: #F9AE33;
+            width: 100%;
+            height: 100%;
+        } 
+        
+        #filmitem3{
+            grid-area: c;
+            background-color:white;
+            border: 1px solid rgb(3, 49, 77);
+            width: 100%;
+            height: 100%;
+        }          
+
+        .posterimg{
+            height: 400px;
+            width: 100%;
+            margin: 0px;
+            border-radius: 4%;
+            object-fit: cover;
+            
+        }
+
+        p.filmstittle{
+            font-size: 36px;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        .filmdetailsdiv{
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .cleardiv{
+            clear: both;
+        }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+
+    #box{
+        flex-direction: column-reverse;
+    }
+
+    #box1{
+        flex-direction: column-reverse;
+    }
+
+    #box2{
+        flex-direction: column-reverse;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
